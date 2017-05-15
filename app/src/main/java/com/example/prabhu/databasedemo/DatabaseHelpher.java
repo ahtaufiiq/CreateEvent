@@ -75,9 +75,9 @@ Cursor cursor = db.rawQuery(query,null);
             do {
                 DatabaseModel model = new DatabaseModel();
                 model.setName(cursor.getString(0));
-                model.setRoll(cursor.getString(2));
-                model.setAddress(cursor.getString(3));
-                model.setBranch(cursor.getString(4));
+                model.setRoll(cursor.getString(1));
+                model.setAddress(cursor.getString(2));
+                model.setBranch(cursor.getString(3));
 
                 modelList.add(model);
             }while (cursor.moveToNext());
